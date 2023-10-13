@@ -1,0 +1,11 @@
+.give_number_container{
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+.give_number_container .content .row{
+    width: 100%;
+}
+.give_number_container .content .col{
+    padding-left:4%;
+    padding-right: 3%;
+}

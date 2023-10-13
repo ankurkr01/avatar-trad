@@ -1,0 +1,73 @@
+/* Default styles for larger screens */
+.container{
+  margin-top: 8%;
+}
+.card {
+  width: 100%; /* Adjust card width and spacing between cards */
+  height: 300px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  transition: transform 0.3s;
+  overflow: hidden; /* Hide overflowing content */
+}
+.slider{
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card_img {
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+  background-image: url('../../Images/slider-3.jpg');
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.card:hover .card_img {
+  transform: scale(1);
+}
+
+.card .card_img .card_info {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  transition: visibility 0.3s;
+}
+
+ .card:hover .card_info {
+  visibility: visible;
+}
+
+/* Media query for screens with a maximum width of 600px (mobile) */
+@media (max-width: 600px) {
+  .Product_cards {
+    flex-direction: column; /* Stack cards vertically */
+  }
+
+   .card {
+    width: 100%; /* Full width for mobile */
+    margin-bottom: 20px; /* Add space between stacked cards */
+  }
+
+  .card:hover {
+    transform: scale(1); 
+  }
+}

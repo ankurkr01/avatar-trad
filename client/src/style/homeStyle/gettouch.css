@@ -1,0 +1,77 @@
+.get_touch_container{
+    margin-bottom: 5%;
+}
+.get_touch_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.get_touch{
+    width: 100%;
+    height: 35vh;
+    background-image: url('../../Images/bg1-home1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.get_touch_pass{
+  color: rgb(170, 150, 150);
+}
+.wrapper_content{
+    transform: translate(-50%, -50%);
+    float: right;
+    margin-top: 150px;
+  }
+  
+  .link_wrapper_content{
+    position: relative;
+  }
+  
+  .link_wrapper_content a{
+    display: block;
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    background: #333;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 3px solid #333;
+    transition: all .35s;
+  }
+  
+  .icon_svg{
+    width: 50px;
+    height: 50px;
+    border: 3px solid transparent;
+    position: absolute;
+    transform: rotate(45deg);
+    right: 0;
+    top: 0;
+    z-index: -1;
+    transition: all .35s;
+  }
+  
+  .link_wrapper_content .icon_svg svg{
+    width: 30px;
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+    transform: rotate(-45deg);
+    fill: #2ecc71;
+    transition: all .35s;
+  }
+  
+  .link_wrapper_content a:hover{
+    width: 200px;
+    border: 3px solid #2ecc71;
+    background: transparent;
+    color: #2ecc71;
+  }
+  
+  .link_wrapper_content a:hover + .icon{
+    border: 3px solid #2ecc71;
+    right: -25%;
+  }

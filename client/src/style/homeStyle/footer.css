@@ -1,0 +1,66 @@
+.footer-wrapper{
+   background-color: rgb(31, 28, 28);
+}
+.footer-widget-wrapper{
+   padding-bottom: 25px; 
+}
+.widget-title{
+   font-size: 20px;
+   padding: 10px 10px 10px 0;
+   color: white;
+   margin-top: 20px;
+}
+address{
+   color: rgb(129, 120, 120);
+
+}
+.link{
+   color: rgb(129, 120, 120);
+}
+.link:hover{
+   text-decoration: none; 
+   color: rgb(230, 28, 95);
+}
+.title_link{
+   color: rgb(230, 240, 240);
+   font-size: 15px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.title_link:hover{
+   text-decoration: none;
+   color: blueviolet;
+}
+.widget-list{
+   margin-left: -30px;
+   margin-top: 20px;
+}
+.widget-list li{
+   list-style: none;
+   margin: 0;
+}
+.newsletter-widget-wrap{
+   color:rgb(143, 132, 132) ;
+}
+.footer-bottom-area{
+   background-color: rgb(71, 71, 71);
+}
+.footer-copyright-area {
+    padding: 18px;
+    color: white;
+    float: left;
+}
+.form-input{
+   padding:6px;
+   margin-right: 5px;
+}
+.powered_text{
+   color: rgb(146, 152, 158);
+}
+.powered_link{
+   color: white;
+   margin-right: 20px;
+}
+.powered_link:hover{
+   text-decoration: none;
+   color: rgb(170, 160, 160);
+}
