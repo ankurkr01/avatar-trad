@@ -1,54 +1,44 @@
-import React from "react";
 import "../../style/homeStyle/navbar.css";
 import { NavLink } from "react-router-dom";
+import React, { useState } from 'react';
 
-const Navbar = () => {
+const FullNavbar = () => {
+  const [searchQuery, setSearchQuery] = useState('');
+
+  const handleSearch = () => {
+    // Add your search logic here (e.g., redirect to a search results page).
+    // For simplicity, we'll just log the search query to the console.
+    console.log('Search Query:', searchQuery);
+  };
+
+  const handleChange = (event) => {
+    setSearchQuery(event.target.value);
+  };
+
   return (
-    <div>
-      <header className="bg-dark">
-        <nav class="navbar ">
-          <h2 class="logo">
-            <NavLink to="/" className="fs-3 text-uppercase">
-              <strong className="text-warning">Krash</strong>{" "}
-            </NavLink>
-          </h2>
-          <input type="checkbox" id="menu-toggler" />
-          <label for="menu-toggler" id="hamburger-btn">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="white"
-              width="24px"
-              height="24px"
-            >
-              <path d="M0 0h24v24H0z" fill="none" />
-              <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z" />
-            </svg>
-          </label>
-          <ul class="all-links">
-            <li>
-              <NavLink to="/admin">Home</NavLink>
-            </li>
-            <li>
-              <NavLink to="#services">Services</NavLink>
-            </li>
-            <li>
-              <NavLink to="#about">About Us</NavLink>
-            </li>
-            <li>
-              <NavLink to="#contact">Contact Us</NavLink>
-            </li>
-            <li>
-              <NavLink to="/signup">Sign up</NavLink>
-            </li>
-            <li>
-              <NavLink to="/signin">Sign in</NavLink>
-            </li>
-          </ul>
-        </nav>
-      </header>
-    </div>
+    <nav className="full-navbar">
+      <div className="navbar-container">
+        <div className="navbar-logo">KRASH</div>
+        <div className="navbar-links">
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/profile">About</NavLink>
+          <NavLink to="/sign-in">Sign In</NavLink>
+          <NavLink to="/sign-up">Sign Up</NavLink>
+        </div>
+        <div className="search-box">
+          <input
+            type="text"
+            placeholder="Search..."
+            value={searchQuery}
+            onChange={handleChange}
+          />
+          <button onClick={handleSearch}>Search</button>
+        </div>
+      </div>
+      
+    </nav>
   );
 };
 
-export default Navbar;
+export default FullNavbar;
+

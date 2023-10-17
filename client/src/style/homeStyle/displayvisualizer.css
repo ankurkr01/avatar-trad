@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
 *,
 *:before,
 *:after{
@@ -59,7 +61,7 @@ img{
 }
 .content_text h2{
     font-size:40px;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 @media (max-width: 600px) {
     .content_text{
