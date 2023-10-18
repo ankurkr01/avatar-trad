@@ -22,7 +22,7 @@ const FullNavbar = () => {
         <div className="navbar-links">
           <NavLink to="/">Home</NavLink>
           <NavLink to="/profile">About</NavLink>
-          <NavLink to="/sign-in">Sign In</NavLink>
+          <NavLink to="/admin-login">Sign In</NavLink>
           <NavLink to="/sign-up">Sign Up</NavLink>
         </div>
         <div className="search-box">

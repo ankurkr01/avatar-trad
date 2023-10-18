@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import "../../style/adminStyle/headerStyle.css";
+
 import {
   BsFillBellFill,
   BsFillEnvelopeFill,

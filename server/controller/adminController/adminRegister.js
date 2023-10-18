@@ -41,9 +41,7 @@ const createAdmin=async(req,resp)=>{
 }
 const loginAdmin=async(req,resp)=>{
     try {
-        console.log(req.body);
         const checkEmail=await adminRegister.findOne({email:req.body.email})
-        console.log(checkEmail);
         if (checkEmail) {
             const matchPassword=await bcrypt.compare(req.body.password,checkEmail.password)
             console.log(matchPassword);

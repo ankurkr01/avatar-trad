@@ -48,47 +48,47 @@ const ProductImage = () => {
         <Carousel responsive={responsive}>
           <div className="card">
             <div className="card_img">
-            <img src={image1} alt="Image 1" />
+            <img src={image1} alt="Card1" />
             </div>
           </div>
           <div className="card">
             <div className="card_img">
-            <img src={image2} alt="Image 1" />
+            <img src={image2} alt="Card2" />
             </div>
           </div>
           <div className="card">
             <div className="card_img">
-            <img src={image3} alt="Image 1" />
+            <img src={image3} alt="Card3" />
             </div>
           </div>
           <div className="card">
             <div className="card_img">
-            <img src={image4} alt="Image 1" />
+            <img src={image4} alt="Card4" />
             </div>
           </div>
           <div className="card">
             <div className="card_img">
-            <img src={image5} alt="Image 1" />
+            <img src={image5} alt="Card5" />
             </div>
           </div>
           <div className="card">
             <div className="card_img">
-            <img src={image6} alt="Image 1" />
+            <img src={image6} alt="Card6" />
             </div>
           </div>
           <div className="card">
             <div className="card_img">
-            <img src={image4} alt="Image 1" />
+            <img src={image4} alt="Card7" />
             </div>
           </div>
           <div className="card">
             <div className="card_img">
-            <img src={image3} alt="Image 1" />
+            <img src={image3} alt="Card8" />
             </div>
           </div>
           <div className="card">
             <div className="card_img">
-            <img src={image2} alt="Image 1" />
+            <img src={image2} alt="Card9" />
             </div>
           </div>
         </Carousel>

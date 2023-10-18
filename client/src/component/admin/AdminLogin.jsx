@@ -6,6 +6,7 @@ const AdminLogin = () => {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
   const adminLogin = async (e) => {
+    console.log(email,password);
     e.preventDefault();
     let result = await fetch("/api/admin/admin-login", {
       method: "post",
@@ -15,10 +16,11 @@ const AdminLogin = () => {
       },
     });
     result = await result.json();
+    console.log(result);
     if (result.token) {
       localStorage.setItem("user", JSON.stringify(result.data));
       localStorage.setItem("token", JSON.stringify(result.token));
-      navigate("/admin-dashboard");
+      navigate("/admin");
     } else {
     }
   };
