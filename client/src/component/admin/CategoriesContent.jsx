@@ -91,14 +91,14 @@ const Categories = () => {
       <div className="categories_cantainer">
         <div className="categories_title">
           <Button
-            className="btn btn-danger mt-3 ml-4"
+            className="btn btn-danger mt-3 m-1 ml-4"
             variant="success"
             onClick={createModal}
           >
             Add Categories
           </Button>
           <Button
-            className="btn btn-warning mt-3 ml-4"
+            className="btn btn-warning mt-3 m-1 ml-4"
             variant="success"
             onClick={createSubModal}
           >

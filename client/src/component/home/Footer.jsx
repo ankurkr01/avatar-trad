@@ -36,14 +36,14 @@ const Footer = () => {
                     <div className="latest-blog-widget">
                       <div className="single-blog-item">
                         <h3><a href="javascript:void(0)" className='title_link'>Email Address</a></h3>
-                        <span className="post-date text-white"><i className="fa fa-envelope"></i> <a href="mailto:exports@simero.in" className='link'> exports@simero.in</a> </span> <br />
-                        <span className="post-date text-white"><i className="fa fa-envelope"></i> <a href="mailto:sales@simero.in" className='link'> sales@simero.in  </a></span> <br />
-                        <span className="post-date text-white"><i className="fa fa-envelope"></i> <a href="mailto:purchase@simero.in" className='link'> purchase@simero.in </a>  </span> <br />
-                        <span className="post-date text-white"><i className="fa fa-envelope"></i> <a href="mailto:hr@simero.in" className='link'> hr@simero.in </a>  </span>
+                        <span className="post-date text-white"><i className="fa fa-envelope"></i> <a href="#" className='link'> exports@krash.in</a> </span> <br />
+                        <span className="post-date text-white"><i className="fa fa-envelope"></i> <a href="#" className='link'> sales@krash.in  </a></span> <br />
+                        <span className="post-date text-white"><i className="fa fa-envelope"></i> <a href="#" className='link'> purchase@krash.in </a>  </span> <br />
+                        <span className="post-date text-white"><i className="fa fa-envelope"></i> <a href="#" className='link'> hr@krash.in </a>  </span>
                       </div>
                       <div className="single-blog-item">
                         <h3><a href="javascript:void(0)" className='title_link'>Contact Number</a></h3>
-                        <span className="post-date"><i className="fa fa-phone"></i><a href="tel:+918141212000" className='link'> +91 81412 12000 </a></span>
+                        <span className="post-date"><i className="fa fa-phone"></i><a href="tel:+918141212000" className='link'> +91 98765 12000 </a></span>
                       </div>
                     </div>
                   </div>
@@ -103,7 +103,7 @@ const Footer = () => {
               <div className="col-md-6 col-sm-5 order-first order-sm-last">
                 <div className="footer-social-icons nav justify-content-center justify-content-md-end">
                   <p className='powered_text'>
-                    Powered by : <a href="https://www.sandhyabranding.com/" target="_blank" className='powered_link'> Sandhya Branding Agency</a>
+                    Powered by : <a href="#" target="_blank" className='powered_link'> Krash IT Services</a>
                   </p>
                 </div>
               </div>

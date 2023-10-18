@@ -16,6 +16,9 @@
 .get_touch_pass{
   color: rgb(170, 150, 150);
 }
+.col{
+  margin-left: 25px !important;
+}
 .wrapper_content{
     transform: translate(-50%, -50%);
     float: right;
