@@ -2,6 +2,12 @@ import React from "react";
 import "../../style/homeStyle/productimage.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import image1 from '../../Images/1.jpg'
+import image2 from '../../Images/2.jpg'
+import image3 from '../../Images/3.jpg'
+import image4 from '../../Images/4.jpg'
+import image5 from '../../Images/6.jpg'
+import image6 from '../../Images/7.jpg'
 
 const ProductImage = () => {
   const responsive = {
@@ -28,7 +34,7 @@ const ProductImage = () => {
       <div className="container">
         <div className="content_text">
           <h2 className="text-center mt-5 display-6 text-weight-bold">Product Series</h2>
-          <p className="mt-5 text-danger text-center">
+          <p className="mt-5 text-center">
             Ipsum has been the industry's standard dummy text ever since the
             1500s, when an unknown printer took a galley of type and scrambled
             it to make a type specimen book. It has survived not only five
@@ -42,47 +48,47 @@ const ProductImage = () => {
         <Carousel responsive={responsive}>
           <div className="card">
             <div className="card_img">
-              <div className="card_info">card 1</div>
+            <img src={image1} alt="Image 1" />
             </div>
           </div>
           <div className="card">
             <div className="card_img">
-              <div className="card_info">card 2</div>
+            <img src={image2} alt="Image 1" />
             </div>
           </div>
           <div className="card">
             <div className="card_img">
-              <div className="card_info">card 3</div>
+            <img src={image3} alt="Image 1" />
             </div>
           </div>
           <div className="card">
             <div className="card_img">
-              <div className="card_info">card 4</div>
+            <img src={image4} alt="Image 1" />
             </div>
           </div>
           <div className="card">
             <div className="card_img">
-              <div className="card_info">card 5</div>
+            <img src={image5} alt="Image 1" />
             </div>
           </div>
           <div className="card">
             <div className="card_img">
-              <div className="card_info">card 6</div>
+            <img src={image6} alt="Image 1" />
             </div>
           </div>
           <div className="card">
             <div className="card_img">
-              <div className="card_info">card 7</div>
+            <img src={image4} alt="Image 1" />
             </div>
           </div>
           <div className="card">
             <div className="card_img">
-              <div className="card_info">card 8</div>
+            <img src={image3} alt="Image 1" />
             </div>
           </div>
           <div className="card">
             <div className="card_img">
-              <div className="card_info">card 9</div>
+            <img src={image2} alt="Image 1" />
             </div>
           </div>
         </Carousel>

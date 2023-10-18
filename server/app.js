@@ -1,12 +1,16 @@
 const express=require('express')
 const app=express()
 const path=require('path')
+const connectDB = require('./config/db')
 
 
 require('./config/db')     // database connection import 
 
 const dotenv=require('dotenv')
 dotenv.config({path:'./config/.env'})
+
+// database 
+connectDB()
 
 // cors Module import  
 

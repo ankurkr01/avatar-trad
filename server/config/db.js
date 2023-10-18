@@ -1,12 +1,11 @@
-const mongoose=require('mongoose')
+const mongoose = require("mongoose");
+mongoose.set('strictQuery', false);
 
-// Bluid Database Connection By Mongoose Module
 
-mongoose.connect('mongodb+srv://avtartrading:testing12@cluster0.ptkbalc.mongodb.net/avtar')
-.then(()=>{
-    console.log('Database Successfully Connect');
-}).catch(()=>{
-    console.log('MongoDB Error');
-})
+const connectDB = async ()=>{
+        const conn = mongoose.connect(process.env.DB_URI);
+        console.log('mongodb connect');
+        
+};
 
-module.exports=mongoose
+module.exports = connectDB;

@@ -32,7 +32,7 @@ const FullNavbar = () => {
             value={searchQuery}
             onChange={handleChange}
           />
-          <button onClick={handleSearch}>Search</button>
+          {/* <button onClick={handleSearch}>Search</button> */}
         </div>
       </div>
       

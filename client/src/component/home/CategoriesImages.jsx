@@ -1,7 +1,11 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import card1 from "../../Images/cromatic.jpg";
+import card1 from "../../Images/c1.jpg";
+import card2 from "../../Images/c2.jpg";
+import card3 from "../../Images/c3.jpg";
+import card4 from "../../Images/c4.jpg";
+
 import "../../style/homeStyle/categoriesimage.css";
 
 const CategoriesImages = () => {
@@ -51,15 +55,15 @@ const CategoriesImages = () => {
             <div className="card_info">tushar</div>
           </div>
           <div className="carousel_card">
-            <img src={card1} alt="" />
+            <img src={card2} alt="" />
             <div className="card_info">tushar</div>
           </div>
           <div className="carousel_card">
-            <img src={card1} alt="" />
+            <img src={card3} alt="" />
             <div className="card_info">tushar</div>
           </div>
           <div className="carousel_card">
-            <img src={card1} alt="" />
+            <img src={card4} alt="" />
             <div className="card_info">tushar</div>
           </div>
           <div className="carousel_card">

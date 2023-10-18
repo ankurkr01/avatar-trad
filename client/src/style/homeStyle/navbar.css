@@ -21,6 +21,7 @@
 .navbar-logo {
   font-size: 24px;
 }
+
 .navbar input#menu-toggler {
   display: none;
 }
@@ -72,11 +73,27 @@ button:hover {
   }
 
   .navbar-links {
+    flex-direction: column;
     margin-top: 20px;
   }
 
   .search-box {
     margin-top: 20px;
   }
-}
 
+  .navbar #hamburger-btn {
+    display: block;
+  }
+
+  .navbar input#menu-toggler:checked + .navbar-links {
+    display: block;
+  }
+
+  .navbar input#menu-toggler {
+    display: none;
+  }
+
+  .navbar-links a {
+    margin: 10px 0;
+  }
+}
