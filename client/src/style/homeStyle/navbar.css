@@ -80,6 +80,10 @@ button:hover {
   .search-box {
     margin-top: 20px;
   }
+  .search-input{
+    border-radius: 23px;
+
+  }
 
   .navbar #hamburger-btn {
     display: block;

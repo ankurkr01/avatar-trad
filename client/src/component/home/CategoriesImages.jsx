@@ -52,27 +52,27 @@ const CategoriesImages = () => {
         >
           <div className="carousel_card">
             <img src={card1} alt="" />
-            <div className="card_info">tushar</div>
+            <div className="card_info">card1</div>
           </div>
           <div className="carousel_card">
             <img src={card2} alt="" />
-            <div className="card_info">tushar</div>
+            <div className="card_info">card2</div>
           </div>
           <div className="carousel_card">
             <img src={card3} alt="" />
-            <div className="card_info">tushar</div>
+            <div className="card_info">card3</div>
           </div>
           <div className="carousel_card">
             <img src={card4} alt="" />
-            <div className="card_info">tushar</div>
+            <div className="card_info">card4</div>
           </div>
           <div className="carousel_card">
             <img src={card1} alt="" />
-            <div className="card_info">tushar</div>
+            <div className="card_info">card5</div>
           </div>
           <div className="carousel_card">
             <img src={card1} alt="" />
-            <div className="card_info">tushar</div>
+            <div className="card_info">card6</div>
           </div>
         </Carousel>
       </div>

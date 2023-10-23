@@ -1,0 +1,53 @@
+/* generic styles stylesheet  */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  color: #222222;
+  color-scheme: light only;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  /* margin: 0; */
+}
+
+body {
+  width: 100%;
+  margin: 0;
+}
+.round-img{
+  height:350px;
+  width: 100px;
+   max-width:650px;
+   /* background:blue; */
+   background-image: url('../../Images/1.jpg');
+   text-align: center;
+   border-radius: 50%;
+}
+.category-name{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.category-img{
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-body{
+  /* width: 20rem; */
+  height: 20rem;
+  margin: 10px;
+  padding: 0px;
+  left: 5px;
+  right: 10px;
+}

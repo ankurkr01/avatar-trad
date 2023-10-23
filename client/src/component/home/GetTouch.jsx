@@ -9,7 +9,7 @@ const GetTouch = () => {
           <div className="get_touch">
             <div className="get_touch_button">
               <div className="row w-100">
-                <div className="col">
+                <div className="col touch">
                    <h3 className="text-white pl-5 pt-5 ">
                      Lets Get in touch with us for your Requirements
                    </h3>

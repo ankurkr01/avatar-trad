@@ -28,6 +28,7 @@ const FullNavbar = () => {
         <div className="search-box">
           <input
             type="text"
+           style={{borderRadius:"20px"}}
             placeholder="Search..."
             value={searchQuery}
             onChange={handleChange}
