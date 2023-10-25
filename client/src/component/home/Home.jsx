@@ -11,6 +11,7 @@ import CategoriesImages from "./CategoriesImages";
 const Home = () => {
   return (
     <div>
+      
       <Navbar />
       <HomeBanner />
       <CategoriesImages />

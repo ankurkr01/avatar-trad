@@ -2,7 +2,8 @@ const express=require('express')
 const app=express()
 const path=require('path')
 const connectDB = require('./config/db')
-
+const fileUpload = require('express-fileupload')
+const cloudinary = require('cloudinary')
 
 require('./config/db')     // database connection import 
 
@@ -11,6 +12,12 @@ dotenv.config({path:'./config/.env'})
 
 // database 
 connectDB()
+
+
+app.use(fileUpload({
+    useTempFiles:true
+}))
+
 
 // cors Module import  
 
@@ -44,6 +51,13 @@ app.use(
 
 // Admin Routing
 
+// cloudinary config 
+cloudinary.config({
+    cloud_name: process.env.CLOUDINARY_NAME,
+    api_key: process.env.CLOUDINARY_API_KEY,
+    api_secret: process.env.CLOUDINARY_API_SECRET,
+  })
+
 const adminRouter=require('./router/adminRouter')
 app.use('/api/admin',adminRouter)
 
@@ -51,9 +65,11 @@ app.use('/api/admin',adminRouter)
 
 const homeRouter=require('./router/homeRouter')
 app.use('/api/',homeRouter)
-app.get('/',(req,res)=>{
-    res.send('hiiii')
-})
+
+
+// banner route 
+const bannerRouter = require('./router/bannerRoutes')
+app.use('/api/', bannerRouter);
 
 // Server  Listening port No 5000 
 
